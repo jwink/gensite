@@ -1,0 +1,36 @@
+{
+  "name": "gensite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwink/gensite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwink/gensite/issues"
+  },
+  "homepage": "https://github.com/jwink/gensite#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "jquery": "^2.1.4",
+    "mongoose": "^4.1.12",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "engines": {
+    "node": "4.1.2"
+  },
+  "devDependencies": {
+    "babelify": "^6.4.0"
+  }
+}
+
+
