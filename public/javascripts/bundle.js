@@ -106,10 +106,7 @@ var CtrlTextBox = React.createClass({
   displayName: 'CtrlTextBox',
 
   render: function render() {
-
     return React.createElement('input', { type: 'text', onChange: this.props.handleChange });
-
-    //	return React.createElement('input',{"type": "text"});
   }
 });
 
@@ -28899,18 +28896,13 @@ var $ = require('jquery');
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-//var basic_components = require('./basic_components');
-
 var CtrlTextBox = require('ctrlTextBox');
 
 var LoginForm = React.createClass({
   displayName: 'LoginForm',
 
   handleChange: function handleChange(e) {
-    //e.preventDefault();
     console.log(e.target.value);
-
-    //console.log(e.target.value);
   },
   render: function render() {
     return React.createElement(CtrlTextBox, { handleChange: this.handleChange });
