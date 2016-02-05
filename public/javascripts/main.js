@@ -16,13 +16,13 @@ var LoginForm = React.createClass({
     if (e.charCode == 13) {
       console.log("Submitted!");
     }
-  },  	
+  },
   render:  function() {
     return(
-      <div>	
+      <div>
         <CtrlTextBox handleChange={this.handleUserName} handleKeyPress={this.handleKeyPress} />
-        <CtrlTextBox handleChange={this.handlePassword} handleKeyPress={this.handleKeyPress} />
-      </div>  
+        <CtrlTextBox handleChange={this.handlePassword} handleKeyPress={this.handleKeyPress} type="password" />
+      </div>
     );
   }
 });
