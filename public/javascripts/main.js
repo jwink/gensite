@@ -6,12 +6,23 @@ var ReactDOM = require('react-dom');
 var CtrlTextBox = require('ctrlTextBox');
 
 var LoginForm = React.createClass({
-  handleChange: function (e) {
+  handleUserName: function (e) {
     console.log(e.target.value);
-  },	
+  },
+  handlePassword: function (e) {
+    console.log(e.target.value);
+  },
+  handleKeyPress: function(e) {
+    if (e.charCode == 13) {
+      console.log("Submitted!");
+    }
+  },  	
   render:  function() {
     return(
-        <CtrlTextBox handleChange={this.handleChange}/>    
+      <div>	
+        <CtrlTextBox handleChange={this.handleUserName} handleKeyPress={this.handleKeyPress} />
+        <CtrlTextBox handleChange={this.handlePassword} handleKeyPress={this.handleKeyPress} />
+      </div>  
     );
   }
 });
