@@ -13,5 +13,16 @@ var LogoDiv = React.createClass({
   }
 });
 
+
+
+var CtrlTextBox = React.createClass({
+  render: function() {
+  	return (
+  	  <input></input>	
+  	);
+  }
+});
+
 exports.LogoDiv = LogoDiv;
+exports.CtrlTextBox = CtrlTextBox;
 
